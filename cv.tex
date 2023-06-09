@@ -129,31 +129,53 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-Enthusiastic software engineer looking to build applications in Rust.
+Enthusiastic polyglot software engineer looking to build software that ships.
 
 %Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Lead Software Engineer - PickNik Robotics} & \hfill Mar 2019 - present \\[3.75pt]
+\textbf{Open Source Rust} & \hfill Jan 2023 - present \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] C++/Rust Book Club - Lead regular meetup where I taught Rust
+        \item[--] 📎 clippy: \href{https://crates.io/crates/conan-export-recipes}{`needless_lifetimes`: lint local macros}
+        \item[--] 📎 clippy: \href{https://github.com/rust-lang/rust-clippy/pull/10257}{`needless_range_loop`: improve documentation}
+        \item[--] 📎 clippy: \href{https://github.com/rust-lang/rust-clippy/pull/10254}{`wildcard_enum_match_arm`: take the enum origin into account}
+        \item[--] 📎 clippy: \href{https://github.com/rust-lang/rust-clippy/pull/10250}{Document lint configuration values in Clippy's book}
+        \item[--] 📎 clippy: \href{https://github.com/rust-lang/rust-clippy/pull/10199}{`case_sensitive_file_extension_comparisons`: Suggest using Path}
+        \item[--] 📦 crate: \href{https://github.com/rust-lang/rust-clippy/pull/10107}{conan-export-recipes: crawl directory of conan recipes and export}
+    \end{itemize}
+    \end{minipage}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Staff Software Engineer - PickNik Robotics} & \hfill Mar 2019 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] C++, Rust, C, CMake, Python, Yaml, Xml, Shell, Javascript
+        \item[--] Technical lead for warehouse pick and place, onsite integration, hardware drivers, CI/CD, software/hardware testing
+        \item[--] Technical lead for fruit harvesting robot, onsite integration, robot localization, bagfile automation, robot hardware driver, CI/CD, combinitorial optimization algorithm for registering vision results
+        \item[--] Robotic truck refueling project - quick prototype using ROS and MoveIt for DOD grant
+        \item[--] Firmware for two separate surgical robotic controllers, onsite integration, CI/CD with Conan/Docker/QNX, motor control firmware
+        \item[--] Mentoring and on-boarding - Founded book club, wrote and ran interviews, 1:1 mentoring with new engineers, taught hardware and software testing and debugging techniques
+        \item[--] Authored CI/CD system for OSS and internal Projects, Github Actions, Gitlab, CircleCI, Travis
+    \end{itemize}
+    \end{minipage}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Open Source ROS at PickNik} & \hfill Mar 2019 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
         \item[--] \href{https://github.com/PickNikRobotics/generate_parameter_library}{Declarative ROS 2 Parameters}
         \item[--] \href{https://www.fplib.dev/}{Monadic error library for C++}
         \item[--] \href{https://github.com/pickNikRobotics/pick_ik}{Genetic and Gradient Descent Inverse Kinematics Solver}
-        \item[--] \href{https://github.com/picknikrobotics/RSL
-}{ROS Support Library}
+        \item[--] \href{https://github.com/picknikrobotics/RSL}{ROS Support Library}
         \item[--] \href{https://github.com/ros-planning/moveit2}{Maintainer and contributor to MoveIt2}
         \item[--] \href{http://ros.rocks/?q=Tyler+Weaver}{Maintainer and contributor to many OSS libraries in ROS}
-        \item[--] Migrated CI from Travis to GitHub Actions -  \href{https://picknik.ai/ros/moveit/devops/2021/12/14/DevOps-for-ROS-Projects-Part-2.html}{Blog post}
-        \item[--] Technical lead for warehouse pick and place
-        \item[--] Technical lead for fruit harvesting robot
-        \item[--] Robotic truck refueling project
-        \item[--] Firmware for surgical robotic controller
-        \item[--] Mentoring and on-boarding
-        \item[--] Authorized and led technical interviews
     \end{itemize}
     \end{minipage}}  \\
 \end{tabularx}
@@ -195,8 +217,9 @@ Enthusiastic software engineer looking to build applications in Rust.
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming Languages &  \normalsize{C++, Rust, Python, CMake, JavaScript}\\
-Tools  &  \normalsize{GDB, Valgrind, GitHub Actions, Docker}\\
+Programming Languages &  \normalsize{C++, Rust, C, CMake, Python, Yaml, Xml, Shell, Javascript}\\
+Tools  &  \normalsize{GDB, Valgrind, GitHub Actions, Docker, Clang-Tidy, Clang-Format, Clippy}\\
+Libraries  &  \normalsize{ROS, MoveIt, Catch2, Gtest, Boost, GSL, Expected, Span, boost.sml, }\\
 \end{tabularx}
 
 \end{document}
