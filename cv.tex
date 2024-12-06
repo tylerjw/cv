@@ -129,10 +129,27 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-Experienced Software Engineer looking for opportunities to improve the state of Rust/C++ Interop.
+Back-end Rust Engineer with production experience building a cloud-based archive and playback application in Rust, open-source robotics consulting, and wireless signal processing.
 
 %Experience
 \section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Senior Software Engineer - SciTec} & \hfill Apr 2024 - Now \\[3.75pt]
+\textbf{IC on Archive and Playback Project in Rust} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Async Axum HTTP web server to interface with Yugabyte database and file storage
+        \item[--] ZMQ playback node to stream data for a single host within an event
+        \item[--] File importing of binary data as C structs and Protobuf messages
+        \item[--] Reporting metrics to Prometheus using pull and push patterns
+        \item[--] Unit and integration testing
+        \item[--] Logging using tracing with Perfetto outputs for profiling
+        \item[--] GitLab CI pipelines for automating releases
+    \end{itemize}
+    \end{minipage}}
+\end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Staff Software Engineer - PickNik Robotics} & \hfill Apr 2019 - Feb 2024 \\[3.75pt]
