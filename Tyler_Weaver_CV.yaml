@@ -1,0 +1,124 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Tyler Weaver (he/him)
+  email: maybe@tylerjw.dev
+  phone: "+13039035681"
+  social_networks:
+    - network: GitHub
+      username: tylerjw
+    - network: LinkedIn
+      username: tyler-weaver-b504626
+  sections:
+    summary:
+      - "Back-end Rust Engineer with production experience building a cloud-based archive and playback application in Rust, open-source robotics consulting, and wireless signal processing."
+
+    work experience:
+      - company: SciTec
+        position: Principal Software Engineer — IC on Archive and Playback Project in Rust
+        start_date: 2024-04
+        end_date: present
+        highlights:
+          - Async Axum HTTP web server to interface with Yugabyte database and file storage
+          - ZMQ playback node to stream data for a single host within an event
+          - File importing of binary data as C structs and Protobuf messages
+          - Reporting metrics to Prometheus using pull and push patterns
+          - Unit and integration testing
+          - Logging using tracing with Perfetto outputs for profiling
+          - GitLab CI pipelines for automating releases
+
+      - company: PickNik Robotics
+        position: Staff Software Engineer — Assumed diverse responsibilities at fast-moving startup
+        start_date: 2019-04
+        end_date: 2024-02
+        highlights:
+          - "Authored Blog Series on Rust/C++ Interop: [Just the Basics](https://tylerjw.dev/posts/rust-cpp-interop/), [CMake](https://tylerjw.dev/posts/rust-cmake-interop-cmake/), [CXX](https://tylerjw.dev/posts/rust-cmake-interop-part-3-cxx/)"
+          - "Maintainer of [Motion Planning Framework MoveIt](https://github.com/ros-planning/moveit2) in the Robot Operating System (ROS) Ecosystem"
+          - "Author of Open-Source code-gen tool for ROS 2 parameters: [generate_parameter_library](https://github.com/PickNikRobotics/generate_parameter_library)"
+          - "Author of Library of C++17 Utilities: [ROS Support Library](https://github.com/picknikrobotics/RSL)"
+          - Author and maintainer of documentation sites
+          - Author of feasibility studies for robotics startups
+          - "Prepared and Led training on C++, Rust, Infrastructure, Testing, Debugging, SOLID, Functional Programming, Reading Code"
+          - "Technical lead for warehouse pick and place, onsite integration, hardware drivers, CI/CD, software/hardware testing"
+          - "Technical lead for fruit harvesting robot, onsite integration, localization, hardware drivers, CI/CD, optimization algorithm for registering vision results"
+          - Developed Robotic truck refueling demo
+          - Developed Robotic satellite grappling demo for Space Force grant
+          - "Developed Firmware for two surgical robotic controllers, onsite integration, Conan/Docker/QNX"
+          - "CI/CD systems for OSS and internal projects using GitHub Actions, Gitlab, CircleCI"
+          - CI systems using multiple compilers and static analysis tools
+          - "CD systems using packaging (Conda, Conan, Debian) and containers"
+          - "[Maintainer and contributor to many OSS libraries in ROS](http://ros.rocks/?q=Tyler+Weaver)"
+
+      - company: Indiegogo funded project
+        position: Firmware Engineer
+        start_date: 2020-05
+        end_date: 2020-08
+        highlights:
+          - "[Thermal sensor for motorsports](https://www.indiegogo.com/projects/tirex-advanced-thermal-sensor-for-motorsports/)"
+          - Developed firmware for micro-controller application
+          - Math code written as a library that was also compiled and tested on the host
+          - CAN messaging to data-logger
+          - Optimized for code-space to fit on low-cost target
+
+      - company: LGS Innovations
+        position: Software Engineer III
+        start_date: 2014-04
+        end_date: 2019-03
+        highlights:
+          - TS/SCI with polygraph
+          - Optimized C++ polyphase resampler and fir filter to run on ARM with NEON instructions
+          - Interface library for new SDR using Protobuf messaging and VRT over Ethernet
+          - Adversarial Research on 802.11b Physical Layer using an SDR
+          - Library for detecting oddly configured cellular basestations
+          - "P25 scanner library - Goertzel algorithm tuned for quick reject based on energy in frequency window, FSW timing and frequency recovery, Viterbi, RS, BCH, and CRC Decoding"
+          - "SDR interface libraries - USRP N210, Sidekiq"
+          - "MPT1327 scanner library - IPP optimized fm demod, feedback timing recovery for MSK"
+          - Ported Matlab library for unknown signal analysis into C++
+
+      - company: TecStar Consulting
+        position: Software Engineer
+        start_date: 2014-03
+        end_date: 2014-06
+        highlights:
+          - Automation Testing using Selenium
+          - Visualization of Hadoop cluster jobs in JavaScript
+          - Google Glass Application
+
+      - company: Colorado Army National Guard
+        position: Satellite Communication Systems Operator-Maintainer
+        start_date: 2008-10
+        end_date: 2014-11
+        highlights:
+          - Afghanistan deployment 2013
+
+    education:
+      - institution: DeVry University
+        area: Computer Engineering Technologies
+        degree: BS
+        end_date: 2014
+        highlights:
+          - Stereo vision system for Colorado Robotics Challenge
+          - Worked as a tutor for other Engineering students
+          - "GPA: 3.96/4.0"
+
+    skills:
+      - label: Programming Languages
+        details: "Rust, C++20, C++17, C++14, C, Python, Bash"
+      - label: Build Tools
+        details: "CMake, Makefiles, Cargo, Colcon, Bazel"
+      - label: CI/CD
+        details: "Github Actions, Gitlab-CI, Jenkins, SonarCloud, Docker, pre-commit"
+      - label: Packaging
+        details: "Pixi, Conda, Conan, Debian"
+      - label: Debugging
+        details: "GDB, Valgrind"
+      - label: Testing
+        details: "Selenium, Catch2, Gtest, Clang-Tidy, Clippy, ASan, TSan, MemSan"
+      - label: Libraries
+        details: "Eigen, Boost, GSL, Expected, Span, Protobuf, ROS, MoveIt"
+      - label: Racing
+        details: "Colorado Hill Climbs, Rally America, American Rally Association, World Racing League, National Auto Sport Association, Colorado Karting Tour"
+
+design:
+  theme: classic
+  page:
+    size: a4
